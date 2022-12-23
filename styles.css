@@ -1,0 +1,102 @@
+
+body{
+    /* background-image: url("Images/b1.png"); */
+    /* font-family: 'Tangerine', serif; */
+    font-size: 48px;
+    animation: backgroundchange 10s ease-in-out infinite;
+}
+#mealoo-logo{
+    font-family: 'Tangerine', serif;
+    margin: 0px;
+    font-weight: 900;
+}
+#heart-icon{
+    margin-left: 80%;
+    background-color: inherit;
+}
+#heart-icon>a{
+    color: red;
+    text-decoration: none;
+}
+.fav-meal-count{
+    font-size: 20px;
+}
+.wrapper{
+    width:820px;
+}
+.wrapper .search-input{
+    background-color: #fff;
+    width:508px;
+    margin-left: 312px;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+input{
+    margin-top: 0px;
+    width: 84%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 60px 0px 20px;
+    font-size: 15px;
+}
+input:focus{
+    outline: none;
+}
+.search-input .autocom-box{
+    padding: 0px;
+    max-height: 280px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events:auto;
+}
+.autocom-box li{
+    font-size:15px;
+    list-style: none;
+    padding: 8px 12px;
+    width:84%;
+    cursor:default;
+    border-radius: 3px;
+    display: none;
+}
+.active .autocom-box li{
+    display: block;
+}
+.autocom-box li:hover{
+    background-color: #efefef;
+}
+.btn{
+    background:linear-gradient(90deg,red,yellow);
+    height:55px;
+    position: absolute;
+    cursor: pointer;
+}
+#add{
+    top:167px;
+    left:933px;
+}
+#search{
+    width:104px;
+    top: 167px;
+    left: 829px;
+}
+@keyframes backgroundchange {
+    0%{
+        background-image: url("Images/b1.png");
+        background-size:cover;
+    }
+    50%{
+        background-image: url("Images/b3.jpg");
+        background-size: cover;
+    }
+    100%{
+        background-image: url("Images/b4.jpeg");
+        background-size: cover;
+    }
+}

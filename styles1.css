@@ -1,0 +1,58 @@
+*{
+    font-family: 'Tangerine', serif;
+}
+body{
+    background: linear-gradient(0deg,rgb(170, 235, 59),red,yellow,yellowgreen,skyblue);
+    animation: backgroundanimation 10s ease-in-out infinite;
+    height: auto;
+}
+#favourite-container{
+    margin:25px;
+    width:95vw;
+    height: 91vh;
+    background-image:url("Images/b5.jpg");
+    background-size: cover;
+}
+#favourite-container>h1{
+    margin-left: 420px;
+    padding: 10px;
+}
+#meal-count{
+    color: brown;
+}
+#list li{
+    list-style:none;
+    font-size: 50px;
+    color: brown;
+    font-weight: 900;
+    width: 80%;
+}
+.remove{
+    color: red;
+    font-size: 30px;
+    position: relative;
+    left:70%;
+    top:-45px;
+    cursor: pointer;
+}
+#list li:hover{
+    background-color: #efefef;
+    cursor: pointer;
+}
+@keyframes backgroundanimation {
+    0%{
+        background: linear-gradient(0deg,rgb(170, 235, 59),red,yellow,yellowgreen,skyblue);
+    }
+    25%{
+        background: linear-gradient(45deg,rgb(170, 235, 59),red,yellow,yellowgreen,skyblue);
+    }
+    50%{
+        background: linear-gradient(90deg,rgb(170, 235, 59),red,yellow,yellowgreen,skyblue);
+    }
+    75%{
+        background: linear-gradient(135deg,rgb(170, 235, 59),red,yellow,yellowgreen,skyblue);
+    }
+    100%{
+        background: linear-gradient(180deg,rgb(170, 235, 59),red,yellow,yellowgreen,skyblue);
+    }
+}
